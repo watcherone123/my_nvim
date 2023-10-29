@@ -30,6 +30,11 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>w"] = { name = "Windows" },
+    ["<leader>wo"] = { "<C-W>p", desc = "Other window" },
+    ["<leader>wd"] = { "<C-W>c", desc = "Delete window" },
+    ["<leader>w-"] = { "<C-W>s", desc = "Split window below" },
+    ["<leader>w/"] = { "<C-W>v", desc = "Split window right" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
