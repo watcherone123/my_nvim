@@ -29,17 +29,22 @@ return {
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
-    ["<leader>b"] = { name = "Buffers" },
-    ["<leader>w"] = { name = "Windows" },
+    ["<leader>w"] = { desc = "Windows" },
     ["<leader>wo"] = { "<C-W>p", desc = "Other window" },
     ["<leader>wd"] = { "<C-W>c", desc = "Delete window" },
     ["<leader>w-"] = { "<C-W>s", desc = "Split window below" },
     ["<leader>w/"] = { "<C-W>v", desc = "Split window right" },
+    ["<leader>wD"] = { ":only<cr>", desc = "Delete other windows" },
+    ["<C-a>"] = { "ggVG", desc = "Select all" }, -- change description but the same command
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  i = {
+    ["<C-a>"] = { "<C-o>^" },
+    ["<C-e>"] = { "<C-o>$" },
   },
 }
