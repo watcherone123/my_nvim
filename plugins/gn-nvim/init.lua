@@ -4,6 +4,7 @@ return {
   dependencies = {
     "google/vim-maktaba",
     "google/vim-codefmt",
+    "google/vim-glaive",
   },
   config = function()
     local group = vim.api.nvim_create_augroup('CodeFmt', { clear = true })

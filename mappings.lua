@@ -36,6 +36,7 @@ return {
     ["<leader>w/"] = { "<C-W>v", desc = "Split window right" },
     ["<leader>wD"] = { ":only<cr>", desc = "Delete other windows" },
     ["<C-a>"] = { "ggVG", desc = "Select all" }, -- change description but the same command
+    ["<leader>lk"] = { ":ClangdSwitchSourceHeader<cr>", desc = "switch c header and source" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
