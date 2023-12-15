@@ -10,6 +10,7 @@ return {
     list = true,
     listchars = "trail:·,space:⋅",
     cmdheight = 1,
+    swapfile = false,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
